@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: row;
+    background: aliceblue;
+
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+/*add user container*/
+.container {
+    width: 23%;
+    display: flex;
+    flex-direction: row;
+}
+.container_form {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+label:first-child {
+    margin-bottom: 10px;
+}
+.input {
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px ridge aliceblue;
+}
+#create-user-button {
+    height: 87px;
+    background: #151ad6bd;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    transition: .2s linear;
+    border-radius: 20px;
+}
+#load-users {
+    background: #151ad6bd;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: white;
+    transition: .2s linear;
+    border-radius: 20px;
+    max-height: 173px;
+}
+#create-user-button:hover, #load-users:hover {
+    box-shadow: 1px 1px white, 4px 4px #151ad659;
+    top: -4px;
+    left: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+.container-users {
+    text-align: center;
+    width: 77%;
+    
+}
+.all-users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.user-cart {
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.25),
+    2px 2px 0px rgba(0,0,0,0.22),
+    6px 6px 0px rgba(0,0,0,0.15),
+    8px 8px 0px rgba(0,0,0,0.12);
+}
+.user-cart>img {
+    width: 48px;
+    border-right: 50%;
+    margin-bottom: 10px;
+}
+.user-cart_content {
+    margin-bottom: 10px;
+}
+.user-cart_content {
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.change-btn-cont {
+    width: 100%;
+}
+.save-user-btn, .delete-user-btn {
+    width: 50%;
+    transition: 1s;
+    background: #0000ff40;
+    border-radius: 20px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: .2s linear;
+}
+/*.save-user-btn:not(:hover), .delete-user-btn:not(:hover) {
+  transition: 1s;
+  background: #fff;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }*/
+.save-user-btn:hover {
+    box-shadow: 1px 1px #7db57d, 3px 3px #7db57d6b;
+    top: -2px;
+    left: -2px;
+}
+.delete-user-btn:hover {
+    box-shadow: 1px 1px #ea6363b8, 3px 3px #fd99999e;
+    top: -2px;
+    left: -2px;
+}
+.save-user-btn {
+    background: #48f74882;
+    color: black;
+}
+.delete-user-btn {
+    background: #fb2a2a7a;
+    color: black;
+}
